@@ -1,0 +1,409 @@
+body,h1,h2,h3,h4,h5,h6 ,a{
+    font-family: 'Rubik', sans-serif;
+}
+p,span{
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-btn {
+	display: inline-block;
+	text-decoration: none;
+	background: #e83b3e;
+	padding: 11px 41px;
+	color: white;
+	border-radius: 7px;
+    position: relative;
+    z-index: 1;
+	overflow: hidden;
+}
+
+.my-btn::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    border-radius: 7px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.my-btn:hover::after{
+    width: 100%;
+}
+
+a:hover{
+    color: white;
+}
+header{
+	background: white;
+}
+
+.my-bg{
+	background: #f9fafb;
+}
+/* ==== Menu bar start ====  */
+
+
+.nav-item a {
+	display: inline-block;
+	font-size: 16px;
+	color: rgb(0, 0, 0) !important;
+	text-decoration: none;
+	padding: 0 15px;
+	font-weight: 500;
+}
+
+
+.nav-item a span {
+	color: #e83b3e;
+	font-size: 10px;
+}
+.nav-item .active-cl{
+    color: #e83b3e !important;
+}
+
+.menu-end{
+    align-items: center;
+}
+
+ /* === Dropdown Menu start ==== */
+
+ .nav-item{
+    position: relative;
+ }
+ .dropdown{
+	position: absolute;
+	top: 220%;
+	left: 0;
+	width: 200px;
+	height: auto;
+	background: white;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all.5s ease-in-out;
+    box-shadow: 1px 1px 10px #dddd;
+    z-index: 9999;
+    
+}
+
+.nav-item:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    top: 190%;
+}
+
+.dropdown li a:hover{
+ transform-origin: left;
+ transform: scaleX(1.1);
+ color: #e83b3e !important;
+    
+}
+
+.dropdown li a {
+	padding: 15px 0px;
+    color: white;
+    transition: .5s;
+}
+
+
+ /* === Dropdown Menu End ==== */
+
+.glass {
+	font-size: 20px;
+	align-content: center;
+	line-height: -9px;
+	display: inline-block;
+	padding-right: 10px;
+	margin-right: 20px;
+	border-right: 2px solid #dddd;
+}
+
+.menu-end-call {
+	width: 205px;
+}
+
+.call-icon {
+	float: left;
+	height: 100%;
+	font-size: 30px;
+	margin-right: 20px;
+	color: #e73c3e;
+	transform: rotate(-33deg);
+}
+
+.call-text p{
+    margin: 0;
+    padding-bottom: 2px;
+    color: #606060;
+
+}
+
+.call-text a {
+	font-size: 16px;
+	font-weight: 500;
+	color: black;
+	text-decoration: none;
+}
+/* ==== Menu bar End ====  */
+
+/* ===== Banner Are start ======== */
+.banner{
+    height: 888px;
+    background: url(https://templates.envytheme.com/finix/default/assets/img/main-banner2.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.banner-item{
+    width: 50%;
+}
+
+.banner-item span {
+	color: #e83b3e;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.banner-item h1 {
+	font-size: 68px;
+	font-weight: 500;
+}
+
+.banner-item p {
+	color: #606060;
+}
+
+.social-menu {
+	position: absolute;
+	bottom: -250px;
+	left: 25px;
+}
+.social li a {
+	display: inline-block;
+	font-size: 16px;
+	padding: 0 10px;
+	color: black;
+    transition: .5s;
+}
+
+.social li a:hover{
+    color: #df3a3c;
+}
+.social{
+    position: relative;
+}
+.follow{
+    margin-right: 40px;
+}
+
+.follow::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 55px;
+	width: 14%;
+	height: 8%;
+	background: black;
+}
+
+/* ===== Banner Are End ======== */
+
+/* ===== About Company start ====  */
+
+.partnership {
+	border-bottom: 1px solid #dddd;
+}
+.about-logo img{
+	width: 85%;
+}
+.about-logo{
+	position: relative;
+}
+.about-logo-content {
+	position: absolute;
+	top: 276px;
+	height: 210px;
+	width: 210px;
+	text-align: center;
+	padding: 25px;
+	color: white;
+	background: url(https://templates.envytheme.com/finix/default/assets/img/about/shape.png) no-repeat;
+	right: 30px;
+}
+.about-logo-content h2{
+	color: #df3a3c;
+	font-size: 70px;
+	font-weight: 500;
+}
+.about-logo-content h6{
+	color: #111114;
+	font-weight: 500;
+}
+.about-text{
+	padding: 20px 0;
+}
+
+.about-text span {
+	font-size: 16px;
+	display: inline-block;
+	padding-bottom: 10px;
+	color: #e93d40;
+}
+
+.about-text h2 {
+	font-size: 36px;
+	font-weight: 400;
+	padding: 10px 0;
+}
+
+.about-text p {
+	color: #606060;
+	padding-bottom: 10px;
+}
+
+.about-text h6 {
+	font-size: 18px;
+	font-weight: 400;
+	color: #606060;
+	padding-bottom: 10px;
+}
+
+.about-text-list::before {
+	content: "\f00c";
+	font-family: "Font Awesome 6 Pro";
+	font-size: 20px;
+	margin-right: 10px;
+	line-height: 33px;
+	color: #e73c3e;
+}
+
+/* ===== About Company End ====  */
+
+/* ===== Choose Us Area start ===== */
+.choose-us{
+	padding: 100px 0;
+}
+.choose-us-text span {
+	color: #ee3c3f;
+	display: inline-block;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.choose-us-text h2 {
+	padding: 10px 0;
+}
+
+.choose-item{
+	background: white;
+	padding: 40px 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	transition: .5s;
+}
+
+.choose-item::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	background: #df3a3d79;
+	top: -199px;
+	left: 0px;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.choose-item:hover{
+	transform: translateY(-10px);
+}
+
+.choose-item:hover .ch-icon i{
+	background: #e83b3e;
+	color: white;
+}
+
+.ch-icon i {
+	font-size: 47px;
+	background: white;
+	height: 100px;
+	display: inline-block;
+	width: 100px;
+	line-height: 94px;
+	border-radius: 50%;
+	color: #e83b3e;
+	transition: .5s;
+}
+
+.mt5{
+	margin-top: -25px;
+}
+/* ===== Play Button start ===== */
+
+.choose-us-img{
+	position: relative;
+}
+.play-button {
+	position: absolute;
+	bottom: 63px;
+	left: 294px;
+}
+
+
+
+
+.play-button i {
+	color: white;
+	border: 12px solid white;
+	background: #e83b3e;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 55px;
+	position: relative;
+}
+
+.play-button::after{
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: 80px;
+	background: #e73c3e;
+	animation-name: play-now;
+	animation: play-now 1.2s infinite ease-in-out;
+}
+
+@keyframes play-now {
+	0%   { transform: scale(0);
+			opacity: 1;
+		}
+	25%  {
+		transform: scale(1.6);
+			opacity: .6;
+	}
+	50%  {
+		transform: scale(1.7);
+			opacity: .4;
+	}
+	100% {
+		transform: scale(1.8);
+		opacity: 0;
+	}
+  }
+/* ===== Play Button End ===== */
+/* ===== Choose Us Area End ===== */
